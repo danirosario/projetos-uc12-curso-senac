@@ -21,5 +21,10 @@ namespace Calculadora
         {
 
         }
+
+        private void painel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

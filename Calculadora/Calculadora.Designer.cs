@@ -39,6 +39,8 @@
             this.painel.Name = "painel";
             this.painel.Size = new System.Drawing.Size(256, 62);
             this.painel.TabIndex = 0;
+            this.painel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.painel.TextChanged += new System.EventHandler(this.painel_TextChanged);
             // 
             // Calculadora
             // 
@@ -49,6 +51,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Calculadora";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
