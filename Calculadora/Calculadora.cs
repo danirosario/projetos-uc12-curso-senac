@@ -65,5 +65,10 @@ namespace Calculadora
         {
             textBoxPainel.Text += "9";
         }
+
+        private void botaoVirgula_Click(object sender, EventArgs e)
+        {
+            textBoxPainel.Text += ",";
+        }
     }
 }

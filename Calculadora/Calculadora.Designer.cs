@@ -70,6 +70,7 @@
             this.botaoVirgula.TabIndex = 1;
             this.botaoVirgula.Text = ",";
             this.botaoVirgula.UseVisualStyleBackColor = true;
+            this.botaoVirgula.Click += new System.EventHandler(this.botaoVirgula_Click);
             // 
             // botaoNumero0
             // 
