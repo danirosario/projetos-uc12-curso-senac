@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculadora));
-            this.painel = new System.Windows.Forms.TextBox();
+            this.textBoxPainel = new System.Windows.Forms.TextBox();
             this.botaoVirgula = new System.Windows.Forms.Button();
             this.botaoNumero0 = new System.Windows.Forms.Button();
             this.botaoOperadorIgual = new System.Windows.Forms.Button();
@@ -52,15 +52,14 @@
             this.labelOperacaoAritmetica = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // painel
+            // textBoxPainel
             // 
-            this.painel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.painel.Location = new System.Drawing.Point(12, 12);
-            this.painel.Name = "painel";
-            this.painel.Size = new System.Drawing.Size(248, 62);
-            this.painel.TabIndex = 0;
-            this.painel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.painel.TextChanged += new System.EventHandler(this.painel_TextChanged);
+            this.textBoxPainel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPainel.Location = new System.Drawing.Point(12, 12);
+            this.textBoxPainel.Name = "textBoxPainel";
+            this.textBoxPainel.Size = new System.Drawing.Size(248, 62);
+            this.textBoxPainel.TabIndex = 0;
+            this.textBoxPainel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // botaoVirgula
             // 
@@ -71,7 +70,6 @@
             this.botaoVirgula.TabIndex = 1;
             this.botaoVirgula.Text = ",";
             this.botaoVirgula.UseVisualStyleBackColor = true;
-            this.botaoVirgula.Click += new System.EventHandler(this.button1_Click);
             // 
             // botaoNumero0
             // 
@@ -82,6 +80,7 @@
             this.botaoNumero0.TabIndex = 2;
             this.botaoNumero0.Text = "0";
             this.botaoNumero0.UseVisualStyleBackColor = true;
+            this.botaoNumero0.Click += new System.EventHandler(this.botaoNumero0_Click);
             // 
             // botaoOperadorIgual
             // 
@@ -102,7 +101,6 @@
             this.botaoOperadorSoma.TabIndex = 4;
             this.botaoOperadorSoma.Text = "+";
             this.botaoOperadorSoma.UseVisualStyleBackColor = true;
-            this.botaoOperadorSoma.Click += new System.EventHandler(this.button4_Click);
             // 
             // botaoOperadorSubtracao
             // 
@@ -113,7 +111,6 @@
             this.botaoOperadorSubtracao.TabIndex = 8;
             this.botaoOperadorSubtracao.Text = "-";
             this.botaoOperadorSubtracao.UseVisualStyleBackColor = true;
-            this.botaoOperadorSubtracao.Click += new System.EventHandler(this.button5_Click);
             // 
             // botaoNumero3
             // 
@@ -124,6 +121,7 @@
             this.botaoNumero3.TabIndex = 7;
             this.botaoNumero3.Text = "3";
             this.botaoNumero3.UseVisualStyleBackColor = true;
+            this.botaoNumero3.Click += new System.EventHandler(this.botaoNumero3_Click);
             // 
             // botaoNumero2
             // 
@@ -134,6 +132,7 @@
             this.botaoNumero2.TabIndex = 6;
             this.botaoNumero2.Text = "2";
             this.botaoNumero2.UseVisualStyleBackColor = true;
+            this.botaoNumero2.Click += new System.EventHandler(this.botaoNumero2_Click);
             // 
             // botaoNumero1
             // 
@@ -144,6 +143,7 @@
             this.botaoNumero1.TabIndex = 5;
             this.botaoNumero1.Text = "1";
             this.botaoNumero1.UseVisualStyleBackColor = true;
+            this.botaoNumero1.Click += new System.EventHandler(this.botaoNumero1_Click);
             // 
             // botaoOperadorMultiplicacao
             // 
@@ -164,6 +164,7 @@
             this.botaoNumero6.TabIndex = 11;
             this.botaoNumero6.Text = "6";
             this.botaoNumero6.UseVisualStyleBackColor = true;
+            this.botaoNumero6.Click += new System.EventHandler(this.botaoNumero6_Click);
             // 
             // botaoNumero5
             // 
@@ -174,6 +175,7 @@
             this.botaoNumero5.TabIndex = 10;
             this.botaoNumero5.Text = "5";
             this.botaoNumero5.UseVisualStyleBackColor = true;
+            this.botaoNumero5.Click += new System.EventHandler(this.botaoNumero5_Click);
             // 
             // botaoNumero4
             // 
@@ -184,7 +186,7 @@
             this.botaoNumero4.TabIndex = 9;
             this.botaoNumero4.Text = "4";
             this.botaoNumero4.UseVisualStyleBackColor = true;
-            this.botaoNumero4.Click += new System.EventHandler(this.button12_Click);
+            this.botaoNumero4.Click += new System.EventHandler(this.botaoNumero4_Click);
             // 
             // botaoOperadorDivisao
             // 
@@ -195,7 +197,6 @@
             this.botaoOperadorDivisao.TabIndex = 16;
             this.botaoOperadorDivisao.Text = "/";
             this.botaoOperadorDivisao.UseVisualStyleBackColor = true;
-            this.botaoOperadorDivisao.Click += new System.EventHandler(this.button13_Click);
             // 
             // botaoNumero9
             // 
@@ -206,7 +207,7 @@
             this.botaoNumero9.TabIndex = 15;
             this.botaoNumero9.Text = "9";
             this.botaoNumero9.UseVisualStyleBackColor = true;
-            this.botaoNumero9.Click += new System.EventHandler(this.button14_Click);
+            this.botaoNumero9.Click += new System.EventHandler(this.botaoNumero9_Click);
             // 
             // botaoNumero8
             // 
@@ -217,7 +218,7 @@
             this.botaoNumero8.TabIndex = 14;
             this.botaoNumero8.Text = "8";
             this.botaoNumero8.UseVisualStyleBackColor = true;
-            this.botaoNumero8.Click += new System.EventHandler(this.button15_Click);
+            this.botaoNumero8.Click += new System.EventHandler(this.botaoNumero8_Click);
             // 
             // botaoNumero7
             // 
@@ -228,7 +229,7 @@
             this.botaoNumero7.TabIndex = 13;
             this.botaoNumero7.Text = "7";
             this.botaoNumero7.UseVisualStyleBackColor = true;
-            this.botaoNumero7.Click += new System.EventHandler(this.button16_Click);
+            this.botaoNumero7.Click += new System.EventHandler(this.botaoNumero7_Click);
             // 
             // botaoCE
             // 
@@ -259,7 +260,6 @@
             this.botaoSqrt.TabIndex = 19;
             this.botaoSqrt.Text = "√";
             this.botaoSqrt.UseVisualStyleBackColor = true;
-            this.botaoSqrt.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // labelOperacaoAritmetica
             // 
@@ -269,7 +269,6 @@
             this.labelOperacaoAritmetica.Size = new System.Drawing.Size(40, 37);
             this.labelOperacaoAritmetica.TabIndex = 20;
             this.labelOperacaoAritmetica.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelOperacaoAritmetica.Click += new System.EventHandler(this.label1_Click);
             // 
             // Calculadora
             // 
@@ -296,13 +295,12 @@
             this.Controls.Add(this.botaoOperadorIgual);
             this.Controls.Add(this.botaoNumero0);
             this.Controls.Add(this.botaoVirgula);
-            this.Controls.Add(this.painel);
+            this.Controls.Add(this.textBoxPainel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Calculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,7 +308,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox painel;
+        private System.Windows.Forms.TextBox textBoxPainel;
         private System.Windows.Forms.Button botaoVirgula;
         private System.Windows.Forms.Button botaoNumero0;
         private System.Windows.Forms.Button botaoOperadorIgual;

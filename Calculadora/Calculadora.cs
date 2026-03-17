@@ -17,64 +17,53 @@ namespace Calculadora
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void botaoNumero0_Click(object sender, EventArgs e)
         {
-
+            textBoxPainel.Text += "0"; // quando clicar no botão 0, o painel de texto exibirá "0"
+        }
+        private void botaoNumero1_Click(object sender, EventArgs e)
+        {
+            textBoxPainel.Text += "1"; 
         }
 
-        private void painel_TextChanged(object sender, EventArgs e)
+        private void botaoNumero2_Click(object sender, EventArgs e)
         {
-
+            textBoxPainel.Text += "2";
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        private void botaoNumero3_Click(object sender, EventArgs e)
         {
-
+            textBoxPainel.Text += "3";
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void botaoNumero4_Click(object sender, EventArgs e)
         {
-
+            textBoxPainel.Text += "4";
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void botaoNumero5_Click(object sender, EventArgs e)
         {
-
+            textBoxPainel.Text += "5";
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void botaoNumero6_Click(object sender, EventArgs e)
         {
-
+            textBoxPainel.Text += "6";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void botaoNumero7_Click(object sender, EventArgs e)
         {
-
+            textBoxPainel.Text += "7";
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void botaoNumero8_Click(object sender, EventArgs e)
         {
-
+            textBoxPainel.Text += "8";
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void botaoNumero9_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            textBoxPainel.Text += "9";
         }
     }
 }
