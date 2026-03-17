@@ -102,6 +102,7 @@
             this.botaoOperadorSoma.TabIndex = 4;
             this.botaoOperadorSoma.Text = "+";
             this.botaoOperadorSoma.UseVisualStyleBackColor = true;
+            this.botaoOperadorSoma.Click += new System.EventHandler(this.botaoOperadorSoma_Click);
             // 
             // botaoOperadorSubtracao
             // 
@@ -112,6 +113,7 @@
             this.botaoOperadorSubtracao.TabIndex = 8;
             this.botaoOperadorSubtracao.Text = "-";
             this.botaoOperadorSubtracao.UseVisualStyleBackColor = true;
+            this.botaoOperadorSubtracao.Click += new System.EventHandler(this.botaoOperadorSubtracao_Click);
             // 
             // botaoNumero3
             // 
@@ -155,6 +157,7 @@
             this.botaoOperadorMultiplicacao.TabIndex = 12;
             this.botaoOperadorMultiplicacao.Text = "x";
             this.botaoOperadorMultiplicacao.UseVisualStyleBackColor = true;
+            this.botaoOperadorMultiplicacao.Click += new System.EventHandler(this.botaoOperadorMultiplicacao_Click);
             // 
             // botaoNumero6
             // 
@@ -198,6 +201,7 @@
             this.botaoOperadorDivisao.TabIndex = 16;
             this.botaoOperadorDivisao.Text = "/";
             this.botaoOperadorDivisao.UseVisualStyleBackColor = true;
+            this.botaoOperadorDivisao.Click += new System.EventHandler(this.botaoOperadorDivisao_Click);
             // 
             // botaoNumero9
             // 
@@ -261,10 +265,12 @@
             this.botaoSqrt.TabIndex = 19;
             this.botaoSqrt.Text = "√";
             this.botaoSqrt.UseVisualStyleBackColor = true;
+            this.botaoSqrt.Click += new System.EventHandler(this.botaoSqrt_Click);
             // 
             // labelOperacaoAritmetica
             // 
             this.labelOperacaoAritmetica.BackColor = System.Drawing.SystemColors.Window;
+            this.labelOperacaoAritmetica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelOperacaoAritmetica.Location = new System.Drawing.Point(14, 24);
             this.labelOperacaoAritmetica.Name = "labelOperacaoAritmetica";
             this.labelOperacaoAritmetica.Size = new System.Drawing.Size(40, 37);
