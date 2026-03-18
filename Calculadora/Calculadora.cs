@@ -201,5 +201,21 @@ namespace Calculadora
             }
             
         }
+
+        private void botaoCE_Click(object sender, EventArgs e)
+        {
+            if(textBoxPainel.Text.Length > 0) // Verifica se o painel de texto tem algum conteúdo
+            {
+                textBoxPainel.Text = string.Empty; ; 
+            }
+        }
+
+        private void botaoC_Click(object sender, EventArgs e)
+        {
+            
+            textBoxPainel.Text = string.Empty; 
+            labelOperacaoAritmetica.Text = string.Empty; // Limpa o rótulo de operação aritmética
+            
+        }
     }
 }

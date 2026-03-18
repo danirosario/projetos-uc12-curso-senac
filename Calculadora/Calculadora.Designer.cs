@@ -245,6 +245,7 @@
             this.botaoCE.TabIndex = 17;
             this.botaoCE.Text = "CE";
             this.botaoCE.UseVisualStyleBackColor = true;
+            this.botaoCE.Click += new System.EventHandler(this.botaoCE_Click);
             // 
             // botaoC
             // 
@@ -255,6 +256,7 @@
             this.botaoC.TabIndex = 18;
             this.botaoC.Text = "C";
             this.botaoC.UseVisualStyleBackColor = true;
+            this.botaoC.Click += new System.EventHandler(this.botaoC_Click);
             // 
             // botaoSqrt
             // 
