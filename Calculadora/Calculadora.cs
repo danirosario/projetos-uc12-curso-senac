@@ -223,5 +223,38 @@ namespace Calculadora
             labelOperacaoAritmetica.Text = string.Empty; // Limpa o rótulo de operação aritmética
             
         }
+
+        private void botaoOperadorIgual_Click(object sender, EventArgs e)
+        {
+            Operacao operacao = operacaoSelecionada; // Armazena a operação selecionada em uma variável local
+            if (double.TryParse(textBoxPainel.Text, out double valorDigitado)) // Tenta converter o texto do painel para um número do tipo double
+            {
+                switch (operacao) // Verifica qual operação foi selecionada
+                {
+                    case Operacao.Soma:
+                        Resultado = Valor + valorDigitado; // Realiza a soma e armazena o resultado
+                        break;
+                    case Operacao.Subtracao:
+                        Resultado = Valor - valorDigitado; // Realiza a subtração e armazena o resultado
+                        break;
+                    case Operacao.Multiplicacao:
+                        Resultado = Valor * valorDigitado; // Realiza a multiplicação e armazena o resultado
+                        break;
+                    case Operacao.Divisao:
+                        if (valorDigitado != 0) // Verifica se o divisor não é zero para evitar divisão por zero
+                        {
+                            Resultado = Valor / valorDigitado; // Realiza a divisão e armazena o resultado
+                        }
+                        else
+                        {
+                            MessageBox.Show("Não é possível dividir por zero.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error); // Exibe uma mensagem de erro se o divisor for zero
+                            return; // Encerra a execução do método para evitar continuar com a divisão por zero
+                        }
+                        break;
+                }
+                labelOperacaoAritmetica.Text = "="; 
+                textBoxPainel.Text = Resultado.ToString("G10"); // Exibe o resultado no painel de texto, formatado para evitar notação científica desnecessária
+            }
+        }
     }
 }

@@ -92,6 +92,7 @@
             this.botaoOperadorIgual.TabIndex = 3;
             this.botaoOperadorIgual.Text = "=";
             this.botaoOperadorIgual.UseVisualStyleBackColor = true;
+            this.botaoOperadorIgual.Click += new System.EventHandler(this.botaoOperadorIgual_Click);
             // 
             // botaoOperadorSoma
             // 
