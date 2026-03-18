@@ -273,9 +273,9 @@
             // 
             this.labelOperacaoAritmetica.BackColor = System.Drawing.SystemColors.Window;
             this.labelOperacaoAritmetica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOperacaoAritmetica.Location = new System.Drawing.Point(14, 24);
+            this.labelOperacaoAritmetica.Location = new System.Drawing.Point(13, 13);
             this.labelOperacaoAritmetica.Name = "labelOperacaoAritmetica";
-            this.labelOperacaoAritmetica.Size = new System.Drawing.Size(40, 37);
+            this.labelOperacaoAritmetica.Size = new System.Drawing.Size(33, 17);
             this.labelOperacaoAritmetica.TabIndex = 20;
             this.labelOperacaoAritmetica.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

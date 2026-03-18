@@ -23,34 +23,36 @@ namespace Calculadora
             Soma,
             Subtracao,
             Multiplicacao,
-            Divisao,
-            Sqrt
+            Divisao
         }
 
         private Operacao operacaoSelecionada { get; set; }// Variável para armazenar a operação selecionada
-        public double resultado { get; set; } // Variável para armazenar o resultado da operação
-        public double valor { get; set; }
+        public double Resultado { get; set; } // Variável para armazenar o resultado da operação
+        public double Valor { get; set; }
 
         private void botaoOperadorSoma_Click(object sender, EventArgs e)
         {
-            operacaoSelecionada = Operacao.Soma; // Define a operação como soma
-            valor = Convert.ToDouble(textBoxPainel.Text); // Converte o texto do painel para um número e armazena na variável valor
-            textBoxPainel.Clear(); // Limpa o painel de texto para permitir a entrada do próximo número
-            labelOperacaoAritmetica.Text = "+"; // Exibe o símbolo da operação selecionada no rótulo de operação aritmética
+            if (double.TryParse(textBoxPainel.Text, out double valorDigitado))
+            {
+                operacaoSelecionada = Operacao.Soma;
+                Valor = valorDigitado; // Armazena o primeiro número
+                textBoxPainel.Clear();
+                labelOperacaoAritmetica.Text = "+";
+            }
         }
 
         private void botaoOperadorSubtracao_Click(object sender, EventArgs e)
         {
-            operacaoSelecionada = Operacao.Subtracao; 
-            valor = Convert.ToDouble(textBoxPainel.Text); 
-            textBoxPainel.Clear(); 
-            labelOperacaoAritmetica.Text = "-"; 
+            operacaoSelecionada = Operacao.Subtracao;
+            Valor = Convert.ToDouble(textBoxPainel.Text);
+            textBoxPainel.Clear();
+            labelOperacaoAritmetica.Text = "-";
         }
 
         private void botaoOperadorMultiplicacao_Click(object sender, EventArgs e)
         {
             operacaoSelecionada = Operacao.Multiplicacao;
-            valor = Convert.ToDouble(textBoxPainel.Text);
+            Valor = Convert.ToDouble(textBoxPainel.Text);
             textBoxPainel.Clear();
             labelOperacaoAritmetica.Text = "x";
         }
@@ -58,7 +60,7 @@ namespace Calculadora
         private void botaoOperadorDivisao_Click(object sender, EventArgs e)
         {
             operacaoSelecionada = Operacao.Divisao;
-            valor = Convert.ToDouble(textBoxPainel.Text);
+            Valor = Convert.ToDouble(textBoxPainel.Text);
             textBoxPainel.Clear();
             labelOperacaoAritmetica.Text = "/";
 
@@ -66,11 +68,15 @@ namespace Calculadora
 
         private void botaoSqrt_Click(object sender, EventArgs e)
         {
-            operacaoSelecionada = Operacao.Sqrt;
-            valor = Convert.ToDouble(textBoxPainel.Text);
-            textBoxPainel.Clear();
-            labelOperacaoAritmetica.Text = "√";
-        } 
+            Valor = Convert.ToDouble(textBoxPainel.Text);  // Converte o valor do painel de texto para um número do tipo double e armazena na variável Valor
+
+            labelOperacaoAritmetica.Text = "√"; // Atualiza o rótulo de operação aritmética para indicar que a operação selecionada é a raiz quadrada
+
+            Resultado = Math.Sqrt(Valor);
+            textBoxPainel.Text = Resultado.ToString("G10"); // Exibe o resultado da raiz quadrada no painel de texto, formatado para evitar notação científica desnecessária
+
+            Valor = Resultado;  // Atualiza o valor armazenado com o resultado da raiz quadrada, permitindo que o usuário continue realizando operações a partir desse resultado
+        }
 
         private void botaoNumero0_Click(object sender, EventArgs e)
         {
