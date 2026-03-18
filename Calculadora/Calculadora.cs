@@ -253,7 +253,7 @@ namespace Calculadora
                         break;
                 }
                 labelOperacaoAritmetica.Text = "="; 
-                textBoxPainel.Text = Resultado.ToString("G10"); // Exibe o resultado no painel de texto, formatado para evitar notação científica desnecessária
+                textBoxPainel.Text = Resultado.ToString("G2");
             }
         }
     }
