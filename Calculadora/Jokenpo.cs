@@ -12,9 +12,5 @@ namespace Calculadora
 {
     public partial class Jokenpo : Form
     {
-        public Jokenpo()
-        {
-            InitializeComponent();
-        }
     }
 }

@@ -16,7 +16,8 @@ namespace Calculadora
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Calculadora());
+            //Application.Run(new Calculadora());
+            Application.Run(new Jokenpo());
         }
     }
 }
