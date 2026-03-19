@@ -173,6 +173,7 @@
             this.Name = "Jokenpo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jokenpo";
+            this.Load += new System.EventHandler(this.Jokenpo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJogador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxResultado)).EndInit();

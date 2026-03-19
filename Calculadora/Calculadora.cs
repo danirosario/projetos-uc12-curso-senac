@@ -256,5 +256,10 @@ namespace Calculadora
                 textBoxPainel.Text = Resultado.ToString("G2");
             }
         }
+
+        private void Calculadora_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
