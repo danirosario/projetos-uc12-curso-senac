@@ -47,7 +47,7 @@
             // 
             // botaoTesoura
             // 
-            this.botaoTesoura.BackgroundImage = global::Calculadora.Properties.Resources.Tesoura;
+            this.botaoTesoura.BackgroundImage = global::Projetos.Properties.Resources.Tesoura;
             this.botaoTesoura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.botaoTesoura.Location = new System.Drawing.Point(476, 299);
             this.botaoTesoura.Name = "botaoTesoura";
@@ -57,7 +57,7 @@
             // 
             // botaoPapel
             // 
-            this.botaoPapel.BackgroundImage = global::Calculadora.Properties.Resources.Papel;
+            this.botaoPapel.BackgroundImage = global::Projetos.Properties.Resources.Papel;
             this.botaoPapel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.botaoPapel.Location = new System.Drawing.Point(258, 299);
             this.botaoPapel.Name = "botaoPapel";
@@ -77,7 +77,7 @@
             // 
             // pictureBoxJogador
             // 
-            this.pictureBoxJogador.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxJogador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxJogador.Location = new System.Drawing.Point(36, 61);
             this.pictureBoxJogador.Name = "pictureBoxJogador";
             this.pictureBoxJogador.Size = new System.Drawing.Size(187, 183);
@@ -86,7 +86,7 @@
             // 
             // pictureBoxPC
             // 
-            this.pictureBoxPC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxPC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxPC.Location = new System.Drawing.Point(258, 61);
             this.pictureBoxPC.Name = "pictureBoxPC";
             this.pictureBoxPC.Size = new System.Drawing.Size(187, 183);
@@ -95,7 +95,7 @@
             // 
             // pictureBoxResultado
             // 
-            this.pictureBoxResultado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxResultado.Location = new System.Drawing.Point(476, 61);
             this.pictureBoxResultado.Name = "pictureBoxResultado";
             this.pictureBoxResultado.Size = new System.Drawing.Size(187, 183);
