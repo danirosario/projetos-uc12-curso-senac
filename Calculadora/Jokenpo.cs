@@ -16,11 +16,6 @@ namespace Calculadora
         {
             InitializeComponent();
         }
-
-        private void Jokenpo_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }
