@@ -26,5 +26,7 @@ namespace Calculadora
         // Método para determinar o resultado do jogo com base na escolha do jogador e do computador
         public Image ImgPc { get; set; }
         public Image ImgJogador { get; set; }
+
+
     }
 }
