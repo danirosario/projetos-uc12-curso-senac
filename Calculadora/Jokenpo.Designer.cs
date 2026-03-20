@@ -106,7 +106,6 @@
             this.pictureBoxResultado.Size = new System.Drawing.Size(187, 183);
             this.pictureBoxResultado.TabIndex = 5;
             this.pictureBoxResultado.TabStop = false;
-            this.pictureBoxResultado.Click += new System.EventHandler(this.pictureBoxResultado_Click);
             // 
             // label1
             // 

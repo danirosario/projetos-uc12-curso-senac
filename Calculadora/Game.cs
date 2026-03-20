@@ -20,7 +20,7 @@ namespace Calculadora
         {
             Image.FromFile(Path.Combine(Application.StartupPath, "imagens/Pedra.png")),
             Image.FromFile(Path.Combine(Application.StartupPath, "imagens/Papel.png")),
-            Image.FromFile(Path.Combine(Application.StartupPath, "imagens/Tesoura.png"))
+            Image.FromFile(Path.Combine(Application.StartupPath, "imagens/Tesoura.png")),
         };
 
         public Image ImgPc { get; set; }
@@ -33,15 +33,22 @@ namespace Calculadora
             ImgPc = imagens[escolhaPc];
             ImgJogador = imagens[escolhaJogador];
 
+
             if (escolhaJogador == escolhaPc)
+            {
                 return Resultado.Empatar;
+            }
 
             if ((escolhaJogador == 0 && escolhaPc == 2) ||
                 (escolhaJogador == 1 && escolhaPc == 0) ||
                 (escolhaJogador == 2 && escolhaPc == 1))
-                return Resultado.Ganhar;
-
-            return Resultado.Perder;
+            {
+               return Resultado.Ganhar;
+            }
+            else 
+            {
+                return Resultado.Perder;
+            }
         }
     }
 }
