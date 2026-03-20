@@ -54,6 +54,7 @@
             this.botaoTesoura.Size = new System.Drawing.Size(187, 183);
             this.botaoTesoura.TabIndex = 2;
             this.botaoTesoura.UseVisualStyleBackColor = true;
+            this.botaoTesoura.Click += new System.EventHandler(this.botaoTesoura_Click);
             // 
             // botaoPapel
             // 
@@ -64,6 +65,7 @@
             this.botaoPapel.Size = new System.Drawing.Size(187, 183);
             this.botaoPapel.TabIndex = 1;
             this.botaoPapel.UseVisualStyleBackColor = true;
+            this.botaoPapel.Click += new System.EventHandler(this.botaoPapel_Click);
             // 
             // botaoPedra
             // 
@@ -74,9 +76,11 @@
             this.botaoPedra.Size = new System.Drawing.Size(187, 183);
             this.botaoPedra.TabIndex = 0;
             this.botaoPedra.UseVisualStyleBackColor = true;
+            this.botaoPedra.Click += new System.EventHandler(this.botaoPedra_Click);
             // 
             // pictureBoxJogador
             // 
+            this.pictureBoxJogador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxJogador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxJogador.Location = new System.Drawing.Point(36, 61);
             this.pictureBoxJogador.Name = "pictureBoxJogador";
@@ -86,6 +90,7 @@
             // 
             // pictureBoxPC
             // 
+            this.pictureBoxPC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxPC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxPC.Location = new System.Drawing.Point(258, 61);
             this.pictureBoxPC.Name = "pictureBoxPC";
@@ -101,12 +106,13 @@
             this.pictureBoxResultado.Size = new System.Drawing.Size(187, 183);
             this.pictureBoxResultado.TabIndex = 5;
             this.pictureBoxResultado.TabStop = false;
+            this.pictureBoxResultado.Click += new System.EventHandler(this.pictureBoxResultado_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 145);
+            this.label1.Location = new System.Drawing.Point(89, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 23);
             this.label1.TabIndex = 6;
@@ -116,7 +122,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(332, 145);
+            this.label2.Location = new System.Drawing.Point(336, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 23);
             this.label2.TabIndex = 7;
