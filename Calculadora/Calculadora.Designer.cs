@@ -55,7 +55,7 @@
             // textBoxPainel
             // 
             this.textBoxPainel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPainel.Location = new System.Drawing.Point(12, 12);
+            this.textBoxPainel.Location = new System.Drawing.Point(12, 13);
             this.textBoxPainel.Name = "textBoxPainel";
             this.textBoxPainel.Size = new System.Drawing.Size(248, 62);
             this.textBoxPainel.TabIndex = 0;
@@ -64,7 +64,7 @@
             // botaoVirgula
             // 
             this.botaoVirgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoVirgula.Location = new System.Drawing.Point(12, 282);
+            this.botaoVirgula.Location = new System.Drawing.Point(12, 283);
             this.botaoVirgula.Name = "botaoVirgula";
             this.botaoVirgula.Size = new System.Drawing.Size(59, 49);
             this.botaoVirgula.TabIndex = 1;
@@ -75,7 +75,7 @@
             // botaoNumero0
             // 
             this.botaoNumero0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero0.Location = new System.Drawing.Point(75, 282);
+            this.botaoNumero0.Location = new System.Drawing.Point(75, 283);
             this.botaoNumero0.Name = "botaoNumero0";
             this.botaoNumero0.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero0.TabIndex = 2;
@@ -86,7 +86,7 @@
             // botaoOperadorIgual
             // 
             this.botaoOperadorIgual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoOperadorIgual.Location = new System.Drawing.Point(138, 282);
+            this.botaoOperadorIgual.Location = new System.Drawing.Point(138, 283);
             this.botaoOperadorIgual.Name = "botaoOperadorIgual";
             this.botaoOperadorIgual.Size = new System.Drawing.Size(59, 49);
             this.botaoOperadorIgual.TabIndex = 3;
@@ -97,7 +97,7 @@
             // botaoOperadorSoma
             // 
             this.botaoOperadorSoma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoOperadorSoma.Location = new System.Drawing.Point(201, 282);
+            this.botaoOperadorSoma.Location = new System.Drawing.Point(201, 283);
             this.botaoOperadorSoma.Name = "botaoOperadorSoma";
             this.botaoOperadorSoma.Size = new System.Drawing.Size(59, 49);
             this.botaoOperadorSoma.TabIndex = 4;
@@ -108,7 +108,7 @@
             // botaoOperadorSubtracao
             // 
             this.botaoOperadorSubtracao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoOperadorSubtracao.Location = new System.Drawing.Point(201, 230);
+            this.botaoOperadorSubtracao.Location = new System.Drawing.Point(201, 231);
             this.botaoOperadorSubtracao.Name = "botaoOperadorSubtracao";
             this.botaoOperadorSubtracao.Size = new System.Drawing.Size(59, 49);
             this.botaoOperadorSubtracao.TabIndex = 8;
@@ -119,7 +119,7 @@
             // botaoNumero3
             // 
             this.botaoNumero3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero3.Location = new System.Drawing.Point(138, 230);
+            this.botaoNumero3.Location = new System.Drawing.Point(138, 231);
             this.botaoNumero3.Name = "botaoNumero3";
             this.botaoNumero3.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero3.TabIndex = 7;
@@ -130,7 +130,7 @@
             // botaoNumero2
             // 
             this.botaoNumero2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero2.Location = new System.Drawing.Point(75, 230);
+            this.botaoNumero2.Location = new System.Drawing.Point(75, 231);
             this.botaoNumero2.Name = "botaoNumero2";
             this.botaoNumero2.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero2.TabIndex = 6;
@@ -141,7 +141,7 @@
             // botaoNumero1
             // 
             this.botaoNumero1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero1.Location = new System.Drawing.Point(12, 230);
+            this.botaoNumero1.Location = new System.Drawing.Point(12, 231);
             this.botaoNumero1.Name = "botaoNumero1";
             this.botaoNumero1.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero1.TabIndex = 5;
@@ -152,7 +152,7 @@
             // botaoOperadorMultiplicacao
             // 
             this.botaoOperadorMultiplicacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoOperadorMultiplicacao.Location = new System.Drawing.Point(201, 177);
+            this.botaoOperadorMultiplicacao.Location = new System.Drawing.Point(201, 178);
             this.botaoOperadorMultiplicacao.Name = "botaoOperadorMultiplicacao";
             this.botaoOperadorMultiplicacao.Size = new System.Drawing.Size(59, 49);
             this.botaoOperadorMultiplicacao.TabIndex = 12;
@@ -163,7 +163,7 @@
             // botaoNumero6
             // 
             this.botaoNumero6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero6.Location = new System.Drawing.Point(138, 177);
+            this.botaoNumero6.Location = new System.Drawing.Point(138, 178);
             this.botaoNumero6.Name = "botaoNumero6";
             this.botaoNumero6.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero6.TabIndex = 11;
@@ -174,7 +174,7 @@
             // botaoNumero5
             // 
             this.botaoNumero5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero5.Location = new System.Drawing.Point(75, 177);
+            this.botaoNumero5.Location = new System.Drawing.Point(75, 178);
             this.botaoNumero5.Name = "botaoNumero5";
             this.botaoNumero5.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero5.TabIndex = 10;
@@ -185,7 +185,7 @@
             // botaoNumero4
             // 
             this.botaoNumero4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero4.Location = new System.Drawing.Point(12, 177);
+            this.botaoNumero4.Location = new System.Drawing.Point(12, 178);
             this.botaoNumero4.Name = "botaoNumero4";
             this.botaoNumero4.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero4.TabIndex = 9;
@@ -196,7 +196,7 @@
             // botaoOperadorDivisao
             // 
             this.botaoOperadorDivisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoOperadorDivisao.Location = new System.Drawing.Point(201, 125);
+            this.botaoOperadorDivisao.Location = new System.Drawing.Point(201, 126);
             this.botaoOperadorDivisao.Name = "botaoOperadorDivisao";
             this.botaoOperadorDivisao.Size = new System.Drawing.Size(59, 49);
             this.botaoOperadorDivisao.TabIndex = 16;
@@ -207,7 +207,7 @@
             // botaoNumero9
             // 
             this.botaoNumero9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero9.Location = new System.Drawing.Point(138, 125);
+            this.botaoNumero9.Location = new System.Drawing.Point(138, 126);
             this.botaoNumero9.Name = "botaoNumero9";
             this.botaoNumero9.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero9.TabIndex = 15;
@@ -218,7 +218,7 @@
             // botaoNumero8
             // 
             this.botaoNumero8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero8.Location = new System.Drawing.Point(75, 125);
+            this.botaoNumero8.Location = new System.Drawing.Point(75, 126);
             this.botaoNumero8.Name = "botaoNumero8";
             this.botaoNumero8.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero8.TabIndex = 14;
@@ -229,7 +229,7 @@
             // botaoNumero7
             // 
             this.botaoNumero7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoNumero7.Location = new System.Drawing.Point(12, 125);
+            this.botaoNumero7.Location = new System.Drawing.Point(12, 126);
             this.botaoNumero7.Name = "botaoNumero7";
             this.botaoNumero7.Size = new System.Drawing.Size(59, 49);
             this.botaoNumero7.TabIndex = 13;
@@ -240,7 +240,7 @@
             // botaoCE
             // 
             this.botaoCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoCE.Location = new System.Drawing.Point(12, 84);
+            this.botaoCE.Location = new System.Drawing.Point(12, 85);
             this.botaoCE.Name = "botaoCE";
             this.botaoCE.Size = new System.Drawing.Size(122, 39);
             this.botaoCE.TabIndex = 17;
@@ -251,7 +251,7 @@
             // botaoC
             // 
             this.botaoC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoC.Location = new System.Drawing.Point(138, 84);
+            this.botaoC.Location = new System.Drawing.Point(138, 85);
             this.botaoC.Name = "botaoC";
             this.botaoC.Size = new System.Drawing.Size(59, 39);
             this.botaoC.TabIndex = 18;
@@ -262,7 +262,7 @@
             // botaoSqrt
             // 
             this.botaoSqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoSqrt.Location = new System.Drawing.Point(201, 84);
+            this.botaoSqrt.Location = new System.Drawing.Point(201, 85);
             this.botaoSqrt.Name = "botaoSqrt";
             this.botaoSqrt.Size = new System.Drawing.Size(59, 39);
             this.botaoSqrt.TabIndex = 19;
@@ -274,7 +274,7 @@
             // 
             this.labelOperacaoAritmetica.BackColor = System.Drawing.SystemColors.Window;
             this.labelOperacaoAritmetica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOperacaoAritmetica.Location = new System.Drawing.Point(13, 13);
+            this.labelOperacaoAritmetica.Location = new System.Drawing.Point(13, 14);
             this.labelOperacaoAritmetica.Name = "labelOperacaoAritmetica";
             this.labelOperacaoAritmetica.Size = new System.Drawing.Size(33, 17);
             this.labelOperacaoAritmetica.TabIndex = 20;
@@ -284,7 +284,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 359);
+            this.ClientSize = new System.Drawing.Size(273, 353);
             this.Controls.Add(this.labelOperacaoAritmetica);
             this.Controls.Add(this.botaoSqrt);
             this.Controls.Add(this.botaoC);
