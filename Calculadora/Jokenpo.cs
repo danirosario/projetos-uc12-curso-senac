@@ -3,7 +3,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace Calculadora
+namespace Projetos
 {
     public partial class Jokenpo : Form
     {

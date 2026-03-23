@@ -1,5 +1,4 @@
 ﻿using System;
-using Calculadora;
 using System.Windows.Forms;
 
 namespace Projetos
@@ -13,7 +12,7 @@ namespace Projetos
 
         private void buttonIrParaCalculadora_Click(object sender, EventArgs e)
         {
-            global::Calculadora.Calculadora calc = new global::Calculadora.Calculadora();
+            Calculadora calc = new Calculadora();
             this.Hide();
             calc.ShowDialog();
             this.Show();

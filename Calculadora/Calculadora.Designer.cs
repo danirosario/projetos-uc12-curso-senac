@@ -1,4 +1,4 @@
-﻿namespace Calculadora
+﻿namespace Projetos
 {
     partial class Calculadora
     {

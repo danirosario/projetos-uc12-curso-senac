@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Calculadora
+namespace Projetos
 {
     public partial class Calculadora : Form
     {
