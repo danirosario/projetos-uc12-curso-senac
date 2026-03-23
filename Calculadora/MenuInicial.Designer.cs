@@ -1,6 +1,6 @@
 ﻿namespace Projetos
 {
-    partial class Menu
+    partial class MenuInicial
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jokenpoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.buttonJokenpo = new System.Windows.Forms.Button();
-            this.buttonCalculadora = new System.Windows.Forms.Button();
+            this.buttonIrParaCalculadora = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,28 +82,29 @@
             this.buttonJokenpo.Text = "JoKenPo";
             this.buttonJokenpo.UseVisualStyleBackColor = true;
             // 
-            // buttonCalculadora
+            // buttonIrParaCalculadora
             // 
-            this.buttonCalculadora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCalculadora.Location = new System.Drawing.Point(144, 227);
-            this.buttonCalculadora.Name = "buttonCalculadora";
-            this.buttonCalculadora.Size = new System.Drawing.Size(218, 86);
-            this.buttonCalculadora.TabIndex = 1;
-            this.buttonCalculadora.Text = "Calculadora";
-            this.buttonCalculadora.UseVisualStyleBackColor = true;
+            this.buttonIrParaCalculadora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIrParaCalculadora.Location = new System.Drawing.Point(144, 227);
+            this.buttonIrParaCalculadora.Name = "buttonIrParaCalculadora";
+            this.buttonIrParaCalculadora.Size = new System.Drawing.Size(218, 86);
+            this.buttonIrParaCalculadora.TabIndex = 1;
+            this.buttonIrParaCalculadora.Text = "Calculadora";
+            this.buttonIrParaCalculadora.UseVisualStyleBackColor = true;
+            this.buttonIrParaCalculadora.Click += new System.EventHandler(this.buttonIrParaCalculadora_Click);
             // 
-            // Menu
+            // MenuInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(516, 652);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonJokenpo);
-            this.Controls.Add(this.buttonCalculadora);
+            this.Controls.Add(this.buttonIrParaCalculadora);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Menu";
-            this.Text = "Menu";
+            this.Name = "MenuInicial";
+            this.Text = "Menu Inicial";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -119,6 +120,6 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonJokenpo;
-        private System.Windows.Forms.Button buttonCalculadora;
+        private System.Windows.Forms.Button buttonIrParaCalculadora;
     }
 }
