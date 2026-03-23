@@ -52,6 +52,13 @@ namespace Projetos
         {
             IniciarJogo(2);
         }
+
+        private void buttonVoltar_Click(object sender, EventArgs e)
+        {
+            MenuInicial menu = new MenuInicial();
+            this.Close();
+            menu.Show();
+        }
     }
 
 }
