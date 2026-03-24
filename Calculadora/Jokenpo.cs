@@ -2,13 +2,14 @@
 using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Threading;
 
 namespace Projetos
 {
     public partial class Jokenpo : Form
     {
         Game game = new Game();
-        public Jokenpo() 
+        public Jokenpo()
         {
             InitializeComponent();
 
@@ -55,9 +56,9 @@ namespace Projetos
 
         private void buttonVoltar_Click(object sender, EventArgs e)
         {
-            MenuInicial menu = new MenuInicial();
             this.Close();
-            menu.Show();
+            Thread abrirMenuInicial = new Thread(() => Application.Run(new MenuInicial())); // criar um novo processamento para abrir novamente o menu que foi finalizado
+            abrirMenuInicial.Start(); // iniciar thread abrirMenuInicial
         }
     }
 
