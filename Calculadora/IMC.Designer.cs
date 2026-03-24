@@ -108,7 +108,7 @@
             // 
             this.ButtonCalcularIMC.Location = new System.Drawing.Point(43, 186);
             this.ButtonCalcularIMC.Name = "ButtonCalcularIMC";
-            this.ButtonCalcularIMC.Size = new System.Drawing.Size(75, 23);
+            this.ButtonCalcularIMC.Size = new System.Drawing.Size(75, 25);
             this.ButtonCalcularIMC.TabIndex = 7;
             this.ButtonCalcularIMC.Text = "Calcular IMC";
             this.ButtonCalcularIMC.UseVisualStyleBackColor = true;
@@ -187,6 +187,7 @@
             this.Controls.Add(this.LabelPeso);
             this.Controls.Add(this.LabelNome);
             this.Name = "IMC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IMC";
             this.ResumeLayout(false);
             this.PerformLayout();
