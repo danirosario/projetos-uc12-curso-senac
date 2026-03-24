@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Projetos
@@ -20,10 +21,14 @@ namespace Projetos
 
         private void buttonIrParaJokenpo_Click(object sender, EventArgs e)
         {
-            Jokenpo jokenpo = new Jokenpo();
-            this.Hide();
-            jokenpo.ShowDialog();
-            this.Show();
+            this.Close();
+            Thread abrirJokenpo = new Thread(() => Application.Run(new Jokenpo()));
+            abrirJokenpo.Start();
+
+            //Jokenpo jokenpo = new Jokenpo();
+            //this.Hide();
+            //jokenpo.ShowDialog();
+            //this.Show();
         }
 
         private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
