@@ -53,6 +53,12 @@
       <DependentUpon>Calculadora.cs</DependentUpon>
     </Compile>
     <Compile Include="Game.cs" />
+    <Compile Include="IMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMC.Designer.cs">
+      <DependentUpon>IMC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jokenpo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Calculadora.resx">
       <DependentUpon>Calculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMC.resx">
+      <DependentUpon>IMC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Jokenpo.resx">
       <DependentUpon>Jokenpo.cs</DependentUpon>
