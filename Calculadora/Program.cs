@@ -16,6 +16,7 @@ namespace Projetos
             //Application.Run(new Calculadora());
             //Application.Run(new Jokenpo());
             Application.Run(new MenuInicial()); 
+            //Application.Run(new IMC());
         }
     }
 }

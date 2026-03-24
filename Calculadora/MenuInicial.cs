@@ -49,5 +49,12 @@ namespace Projetos
         {
             this.Close();
         }
+
+        private void buttonIMC_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Thread abrirIMC = new Thread(() => Application.Run(new IMC()));
+            abrirIMC.Start();
+        }
     }
 }

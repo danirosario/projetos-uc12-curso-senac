@@ -108,7 +108,7 @@
             // 
             this.ButtonCalcularIMC.Location = new System.Drawing.Point(43, 186);
             this.ButtonCalcularIMC.Name = "ButtonCalcularIMC";
-            this.ButtonCalcularIMC.Size = new System.Drawing.Size(75, 25);
+            this.ButtonCalcularIMC.Size = new System.Drawing.Size(75, 37);
             this.ButtonCalcularIMC.TabIndex = 7;
             this.ButtonCalcularIMC.Text = "Calcular IMC";
             this.ButtonCalcularIMC.UseVisualStyleBackColor = true;
@@ -147,6 +147,7 @@
             this.ButtonMenuInicial.TabIndex = 10;
             this.ButtonMenuInicial.Text = "Voltar";
             this.ButtonMenuInicial.UseVisualStyleBackColor = true;
+            this.ButtonMenuInicial.Click += new System.EventHandler(this.ButtonMenuInicial_Click);
             // 
             // ColumnHeaderNome
             // 
