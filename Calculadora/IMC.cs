@@ -13,7 +13,27 @@ namespace Projetos
 
         private void ButtonCalcularIMC_Click(object sender, EventArgs e)
         {
-            CalcularIMC();
+            //CalcularIMC();
+
+            var pessoa = new PessoaImc();
+            pessoa.Nome = TextBoxNome.Text;
+            pessoa.Peso = double.Parse(TextBoxPeso.Text);
+            pessoa.Altura = double.Parse(TextBoxAltura.Text);
+
+            var imc = pessoa.CalcularIMC();
+            var status = pessoa.StatusIMC();
+
+            var lista = new string[]
+            {
+                TextBoxNome.Text,
+                pessoa.Peso.ToString("F2"),
+                pessoa.Altura.ToString("F2"),
+                imc.ToString("F2"),
+                status.ToString()
+            };
+
+            listViewResultados.Items.Add(new ListViewItem(lista));
+
             Limpar();
         }
 
@@ -37,43 +57,43 @@ namespace Projetos
             TextBoxAltura.Clear();
         }
 
-        public void CalcularIMC()
-        {
-            string status;
+        //public void CalcularIMC()
+        //{
+        //    string status;
 
-            double.TryParse(TextBoxPeso.Text , out double peso);
-            double.TryParse(TextBoxAltura.Text , out double altura);
+        //    double.TryParse(TextBoxPeso.Text , out double peso);
+        //    double.TryParse(TextBoxAltura.Text , out double altura);
 
-            double imc = peso / Math.Pow(altura, 2);
+        //    double imc = peso / Math.Pow(altura, 2);
 
-            if (imc < 18.5)
-            {
-                status = "Abaixo do peso";
-            }
-            else if (imc >= 18.5 && imc < 25)
-            {
-                status = "Peso normal";
-            }
-            else if (imc >= 25 && imc < 30)
-            {
-                status = "Sobrepeso";
-            }
-            else
-            {
-                status = "Obesidade";
-            }
+        //    if (imc < 18.5)
+        //    {
+        //        status = "Abaixo do peso";
+        //    }
+        //    else if (imc >= 18.5 && imc < 25)
+        //    {
+        //        status = "Peso normal";
+        //    }
+        //    else if (imc >= 25 && imc < 30)
+        //    {
+        //        status = "Sobrepeso";
+        //    }
+        //    else
+        //    {
+        //        status = "Obesidade";
+        //    }
 
-            var linha = new string[] 
-            {
-                TextBoxNome.Text,
-                peso.ToString("F2"),
-                altura.ToString("F2"),
-                imc.ToString("F2"),
-                status
-            };
+        //    var linha = new string[] 
+        //    {
+        //        TextBoxNome.Text,
+        //        peso.ToString("F2"),
+        //        altura.ToString("F2"),
+        //        imc.ToString("F2"),
+        //        status
+        //    };
 
-            listViewResultados.Items.Add(new ListViewItem(linha));
-        }
+        //    listViewResultados.Items.Add(new ListViewItem(linha));
+        //}
 
         private void ButtonExcluir_Click(object sender, EventArgs e)
         {
