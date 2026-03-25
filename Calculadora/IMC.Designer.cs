@@ -38,12 +38,12 @@
             this.ButtonCalcularIMC = new System.Windows.Forms.Button();
             this.ButtonExcluir = new System.Windows.Forms.Button();
             this.listViewResultados = new System.Windows.Forms.ListView();
-            this.ButtonMenuInicial = new System.Windows.Forms.Button();
             this.ColumnHeaderNome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeaderPeso = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeaderAltura = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeaderIMC = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeaderStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ButtonMenuInicial = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LabelNome
@@ -139,16 +139,6 @@
             this.listViewResultados.UseCompatibleStateImageBehavior = false;
             this.listViewResultados.View = System.Windows.Forms.View.Details;
             // 
-            // ButtonMenuInicial
-            // 
-            this.ButtonMenuInicial.Location = new System.Drawing.Point(43, 431);
-            this.ButtonMenuInicial.Name = "ButtonMenuInicial";
-            this.ButtonMenuInicial.Size = new System.Drawing.Size(75, 23);
-            this.ButtonMenuInicial.TabIndex = 10;
-            this.ButtonMenuInicial.Text = "Voltar";
-            this.ButtonMenuInicial.UseVisualStyleBackColor = true;
-            this.ButtonMenuInicial.Click += new System.EventHandler(this.ButtonMenuInicial_Click);
-            // 
             // ColumnHeaderNome
             // 
             this.ColumnHeaderNome.Text = "Nome";
@@ -170,6 +160,16 @@
             // 
             this.ColumnHeaderStatus.Text = "Status";
             this.ColumnHeaderStatus.Width = 70;
+            // 
+            // ButtonMenuInicial
+            // 
+            this.ButtonMenuInicial.Location = new System.Drawing.Point(43, 431);
+            this.ButtonMenuInicial.Name = "ButtonMenuInicial";
+            this.ButtonMenuInicial.Size = new System.Drawing.Size(75, 23);
+            this.ButtonMenuInicial.TabIndex = 10;
+            this.ButtonMenuInicial.Text = "Voltar";
+            this.ButtonMenuInicial.UseVisualStyleBackColor = true;
+            this.ButtonMenuInicial.Click += new System.EventHandler(this.ButtonMenuInicial_Click);
             // 
             // IMC
             // 
