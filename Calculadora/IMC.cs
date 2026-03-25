@@ -15,7 +15,6 @@ namespace Projetos
         {
             CalcularIMC();
             Limpar();
-
         }
 
         private void ButtonLimpar_Click(object sender, EventArgs e)
@@ -74,6 +73,11 @@ namespace Projetos
             };
 
             listViewResultados.Items.Add(new ListViewItem(linha));
+        }
+
+        private void ButtonExcluir_Click(object sender, EventArgs e)
+        {
+            listViewResultados.Items.Clear();
         }
     }
 }

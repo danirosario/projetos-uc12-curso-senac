@@ -122,6 +122,7 @@
             this.ButtonExcluir.TabIndex = 8;
             this.ButtonExcluir.Text = "Excluir";
             this.ButtonExcluir.UseVisualStyleBackColor = true;
+            this.ButtonExcluir.Click += new System.EventHandler(this.ButtonExcluir_Click);
             // 
             // listViewResultados
             // 
