@@ -97,7 +97,19 @@ namespace Projetos
 
         private void ButtonExcluir_Click(object sender, EventArgs e)
         {
-            listViewResultados.Items.Clear();
+
+            if (listViewResultados.SelectedItems.Count > 0)
+            {
+                if (MessageBox.Show("Deseja excluir o item selecionado?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    listViewResultados.Items.Remove(listViewResultados.SelectedItems[0]);
+                }
+            }
+        }
+
+        private void listViewResultados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

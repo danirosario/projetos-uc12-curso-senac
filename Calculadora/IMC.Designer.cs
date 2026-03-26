@@ -132,6 +132,7 @@
             this.ColumnHeaderAltura,
             this.ColumnHeaderIMC,
             this.ColumnHeaderStatus});
+            this.listViewResultados.FullRowSelect = true;
             this.listViewResultados.HideSelection = false;
             this.listViewResultados.Location = new System.Drawing.Point(141, 186);
             this.listViewResultados.Name = "listViewResultados";
@@ -139,6 +140,7 @@
             this.listViewResultados.TabIndex = 9;
             this.listViewResultados.UseCompatibleStateImageBehavior = false;
             this.listViewResultados.View = System.Windows.Forms.View.Details;
+            this.listViewResultados.SelectedIndexChanged += new System.EventHandler(this.listViewResultados_SelectedIndexChanged);
             // 
             // ColumnHeaderNome
             // 
